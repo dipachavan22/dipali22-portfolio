@@ -133,6 +133,101 @@
         }
         .btn-ghost:hover{ transform:translateY(-3px); box-shadow:0 6px 18px rgba(6,24,54,0.12); }
 
+       .cert-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.cert-list li span {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Attractive button */
+.btn-view {
+    background: linear-gradient(135deg, #06437a, #0d6efd);
+    border: none;
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25);
+}
+
+.intern-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.intern-list li span {
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.extra-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.extra-list li span {
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 6px 18px;
+    background: linear-gradient(135deg, #0d6efd, #06437a);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+    transition: 0.3s ease;
+}
+
+.btn-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    letter-spacing: 0.5px;
+}
+
+.download-icon {
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+/* Hover ला download icon हलका खाली slide होईल */
+.btn-download:hover .download-icon {
+    transform: translateY(3px);
+}
+
+
+
     </style>
 </head>
 <body>
@@ -140,12 +235,18 @@
     <!-- HEADER (glass) -->
     <div class="header-section">
         <h1>Dipali Navnath Chavan</h1>
-        <p>Email: <a href="mailto:dipachavan2210@gmail.com" style="color: #fff; text-decoration:underline;">dipachavan2210@gmail.com</a> | Phone: +91 9373024121</p>
+        <p>Email: <a href="dipachavan2210@gmail.com" style="color: #fff; text-decoration:underline;">dipachavan2210@gmail.com</a> | Phone: +91 9373024121</p>
         <p>
             <a href="https://www.linkedin.com/in/dipali-chavan-29537731b" class="btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
             &nbsp;&nbsp;
             <a href="https://github.com/dipachavan22" class="btn-ghost" target="_blank" rel="noopener">GitHub</a>
         </p>
+        <p>
+        <a href="DipaliChavan_CV (2).pdf" download class="btn-download">
+            <span class="download-icon"></span> Download CV
+        </a>
+</p>
+
     </div>
 
     <!-- MAIN CONTENT -->
@@ -154,7 +255,7 @@
         <!-- Objective -->
         <div class="glass-card" id="card-objective">
             <div class="section-title">Objective</div>
-            <p class="muted">Computer Science graduate skilled in Java, Python, Web Development and IT Support. Seeking an entry-level role where I can apply technical troubleshooting, customer service, ticketing systems, and problem-solving skills to contribute to organizational growth.</p>
+            <p class="muted">Aspiring Full-Stack Developer with a strong interest in frontend and backend development. Eager to learn new technologies and contribute to real-time projects while continuously improving my technical skills.</p>
         </div>
 
         <!-- Education + Skills side by side on wide screens -->
@@ -162,20 +263,32 @@
             <div class="glass-card" id="card-education">
                 <div class="section-title">Education</div>
                 <ul>
-                    <li><strong>BCS</strong> – Karmaveer Bhaurao Patil College, Islampur (CGPA: 8.82, 2025)</li>
-                    <li><strong>HSC</strong> – Vidyamandir Jr. College, Islampur (59%, 2022)</li>
-                    <li><strong>SSC</strong> – MPP Vidyalaya, Borgaon (86.40%, 2020)</li>
+                    <li><strong>BCS</strong> – Karmaveer Bhaurao Patil College, Islampur (CGPA: 8.82, 2025) 
+                    <a href="Sem-VI.jpg" download class="btn-download">
+                    <span class="download-icon"></span>View
+                    </a> 
+                    </li>
+                    <li><strong>HSC</strong> – Vidyamandir Jr. College, Islampur (59%, 2022)
+                    <a href="12th.jpg" download class="btn-download">
+                    <span class="download-icon"></span>View
+                    </a> 
+                    </li>
+                    <li><strong>SSC</strong> – MPP Vidyalaya, Borgaon (86.40%, 2020)
+                    <a href="10th.jpg" download class="btn-download">
+                    <span class="download-icon"></span>View
+                    </a> 
+                    </li>
                 </ul>
             </div>
 
             <div class="glass-card" id="card-skills">
                 <div class="section-title">Technical Skills</div>
                 <ul>
-                    <li><strong>Programming:</strong> C, Java, Python, C++ (Basic)</li>
-                    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+                    <li><strong>Programming:</strong> C, Java,C++ (Basic)</li>
+                    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript(Basic), Bootstrap</li>
                     <li><strong>Database:</strong> MySQL</li>
-                    <li><strong>Networking:</strong> OSI, TCP/IP, DHCP, DNS, VPN, ITIL, SLA</li>
-                    <li><strong>Tools:</strong> VS Code, Eclipse, XAMPP, MySQL Workbench</li>
+                    <li><strong>Networking:</strong> OSI, TCP/IP</li>
+                    <li><strong>Tools:</strong> VS Code, Eclipse, XAMPP, MySQL Workbench,Notepad,Notepad++,Git & GitHub(basic)</li>
                 </ul>
             </div>
         </div>
@@ -186,35 +299,124 @@
 
             <h6 class="muted">Backend Projects</h6>
             <ul>
-                <li><strong>Online Event Management System:</strong> Java, MySQL, JasperReport, HTML/CSS</li>
-                <li><strong>Student Performance QR System:</strong> Python, JavaScript, XAMPP</li>
-                <li><strong>Fruit Shop with Razorpay:</strong> Python, JavaScript, XAMPP</li>
+                <li><strong>Online Event Management System:</strong> Java, MySQL,HTML,CSS,Bootstrap,JS</li>
+                <li><strong>Student Performance QR System:</strong> Python cgi-sripting,MySQL,HTML,CSS,Bootstrap,JS</li>
+                <li><strong>Fruit Shop:</strong> Python cgi-sripting,MySQL,HTML,CSS,Bootstrap,JS</li>
             </ul>
 
             <h6 class="mt-3 muted">Frontend Projects</h6>
             <ul>
-                <li>Sun Speed Solar</li>
-                <li>Barbeque Website</li>
-                <li>Bhramanti CMS</li>
-                <li>Sukanya Masale</li>
+                <li><a class="project-btn" href="https://dipachavan22.github.io/sunspeedsolar/" target="_blank">Sun Speed Solar</a></li>
+                <li><a class="project-btn" href="#" target="_blank">Barbeque Website</a></li>
+                <li><a class="project-btn" href="#" target="_blank">Sukanya Masale</a></li>
             </ul>
         </div>
 
         <!-- Certifications + Internship (grid) -->
-        <div class="glass-grid">
-            <div class="glass-card" id="card-cert">
-                <div class="section-title">Certifications</div>
-                <p class="muted">HTML & CSS, Java, Full Stack Java, C Programming, Full Stack Python</p>
-            </div>
+      <div class="glass-card" id="card-cert">
+    <div class="section-title">Certifications</div>
 
-            <div class="glass-card" id="card-intern">
-                <div class="section-title">Internship & Training</div>
-                <ul>
-                    <li><strong>Java Full Stack Development</strong> – Symbiosis & Capgemini CSR (Nov 2024 – Feb 2025)</li>
-                    <li><strong>Python Full Stack Development</strong> – Wolfox Services Pvt. Ltd (Jul 2025 – Nov 2025)</li>
-                </ul>
-            </div>
-        </div>
+    <ul class="cert-list">
+        <li>
+            <span>HTML</span>
+            <a href="HTML.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+        <li>
+            <span>CSS</span>
+            <a href="CSS.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+
+        <li>
+            <span>Java</span>
+            <a href="JAVA.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+
+        <li>
+            <span>Full Stack Java</span>
+            <a href="JAVA-FullStack.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+
+        <li>
+            <span>C Programming</span>
+            <a href="C Programing.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>      
+          </li>
+
+        <li>
+            <span>Full Stack Intership</span>
+            <a href="wolfox.pvt.ltd.pdf" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+           <div class="glass-card" id="card-intern">
+    <div class="section-title">Internship & Training</div>
+
+    <ul class="intern-list">
+        <li>
+            <span><strong>Java Full Stack Development</strong> – Symbiosis & Capgemini CSR (Nov 2024 – Feb 2025)</span>
+            <a href="JAVA-FullStack.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+
+        <li>
+            <span><strong>Full Stack Development Intership</strong> – Wolfox Services Pvt. Ltd (Jul 2025 – Nov 2025)</span>
+            <a href="wolfox.pvt.ltd.pdf" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+    </ul>
+</div>
+
+
+
+     <div class="glass-card" id="card-extra">
+    <div class="section-title">Extracurricular Activities</div>
+
+    <ul class="extra-list">
+        <li>
+            <span>Disha’s IT Quiz (Grade A)</span>
+            <a href="Quiz.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+
+        <li>
+            <span>Summer Code Challenge</span>
+            <a href="Summer Code.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+
+        <li>
+            <span>National Seminar (Participant)</span>
+            <a href="National Seminar.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+
+        <li>
+            <span>Drawing Competition – Disha Computer Institute</span>
+            <a href="Drawing.jpg" download class="btn-download">
+            <span class="download-icon"></span>View
+            </a>  
+        </li>
+    </ul>
+</div>
+
 
         <!-- Languages + Hobbies -->
         <div class="glass-grid">

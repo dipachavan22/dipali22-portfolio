@@ -1,0 +1,38 @@
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>git --version
+git version 2.51.0.windows.1
+
+C:\Users\Admin>cd C:\Portfolio
+
+C:\Portfolio>git init
+Initialized empty Git repository in C:/Portfolio/.git/
+
+C:\Portfolio>git add .
+
+C:\Portfolio>git commit -m "Initial portfolio upload"
+[main (root-commit) cef1720] Initial portfolio upload
+ 5 files changed, 368 insertions(+)
+ create mode 100644 .vscode/launch.json
+ create mode 100644 ResumeWebpage.html
+ create mode 100644 dipa.png
+ create mode 100644 girl.png
+ create mode 100644 index.html
+
+C:\Portfolio>git remote add origin https://github.com/dipachavan22/dipali22-portfolio.git
+
+C:\Portfolio>git branch -M main
+
+C:\Portfolio>git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 384.60 KiB | 1.42 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/dipachavan22/dipali22-portfolio.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Portfolio>
